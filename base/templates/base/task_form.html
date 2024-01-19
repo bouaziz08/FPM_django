@@ -1,0 +1,48 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="header-bar">
+    <a href="{% url 'tasks' %}">Back</a>
+</div>
+
+<h3>task form</h3>
+
+<div class="card-body">
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.title.label_tag }}
+         {{ form.title }}
+        {{ form.description.label_tag }}
+         {{ form.description }}
+        {{ form.priority.label_tag }}
+         {{ form.priority }}
+        
+{#        <label for="id_priority">Priority:</label>#}
+{#        <select name="priority" id="id_priority">#}
+{#            <option value="0" selected>Default</option>#}
+{#            <option value="1" style="color: #00a8ff ">Low</option>#}
+{#            <option value="2" style="color: #fa8231 ">Medium</option>#}
+{#            <option value="3" style="color: red ">High</option>#}
+{#        </select>#}
+
+    <label for="id_date_field">Deadline:</label>
+    <input type="datetime-local" name="deadline" id="id_date_field">
+
+    {{ form.complete.label_tag }}
+    {{ form.complete }}
+
+        <input class="button" type="submit" value="Submit"><br><br>
+    </form>
+</div>
+
+</body>
+</html>
+{% endblock content %}

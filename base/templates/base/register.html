@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+        width: calc(100% - 47px);
+        padding: 12px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #636e72;
+        border-radius: 6px;
+        background-color: #f9f9f9;
+        color: #555;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+    }
+    </style>
+
+</head>
+<body>
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input  class="button" type="submit" value="Register">
+    </form>
+    <p>Already have an account?<a href="{% url 'login' %}">Login</a></p>
+</div>
+</body>
+</html>
+{% endblock content %}

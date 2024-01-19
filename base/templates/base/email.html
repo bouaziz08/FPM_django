@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations on Completing a Task</title>
+
+    <!-- Add some styles for a visually appealing design -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Congratulations!</h1>
+        </header>
+
+        <div style="padding: 20px;">
+            <p>Hello <strong>{{ recipient }}</strong>,</p>
+
+            <p>Congratulations! You have completed the task: "<strong>{{ task_title }}</strong>"</p>
+
+            <p>Thank you for using our task management system. Keep up the great work!</p>
+        </div>
+
+        <div class="footer">
+            <p>This email was sent from the Task Management System. &copy; 2024. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
