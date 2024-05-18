@@ -7,7 +7,7 @@ pipeline {
 		stage('Scan') {
 			steps {
 				withSonarQubeEnv(installationName: 'sq1'){
-					bat 'python manage.py test'
+					bat 'python manage.py PFM_django'
 				}
 			}
 		}
