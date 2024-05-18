@@ -8,8 +8,8 @@ pipeline {
 			steps {
 				withSonarQubeEnv(installationName: 'sq1'){
 					bat """
-			                python -m venv ${VENV_DIR}
-			                ${VENV_DIR}\\Scripts\\activate
+			                python -m venv venv
+			                venv\\Scripts\\activate
 			                pip install --upgrade pip
 			                
 			                """ 
