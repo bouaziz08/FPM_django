@@ -7,7 +7,10 @@ pipeline {
 		stage('Scan') {
 			steps {
 				withSonarQubeEnv(installationName: 'sq1'){
-					bat 'python manage.py PFM_django'
+					bat '
+					python -m venv venv
+               				venv\\Scripts\\activate
+                			pip install --upgrade pip'
 				}
 			}
 		}
