@@ -25,21 +25,17 @@ This is a simple and efficient To-Do List app built using Django as the backend 
     ```
 2. Navigate to the project directory:
     ```bash
-    cd todo-app
+    cd todo_List
     ```
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
     ```
-4. Apply database migrations:
-    ```bash
-    python manage.py migrate
-    ```
-5. Run the Django development server:
+4. Run the Django development server:
     ```bash
     python manage.py runserver
     ```
-6. Open your browser and go to `http://127.0.0.1:8000` to use the app.
+5. Open your browser and go to `http://127.0.0.1:8000` to use the app.
 
 ---
 
