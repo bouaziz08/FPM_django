@@ -45,7 +45,8 @@ This is a simple and efficient To-Do List app built using Django as the backend 
 2. **Add Task**: Use the "Add Task" button to create new tasks.
 3. **Edit Task**: Click on a task to edit or mark it as completed.
 4. **Delete Task**: Use the "Delete" button to remove completed or unwanted tasks.
-
+5. **Email**: After complete the task an automatic email send to your inbox
+ 
 ---
 
 ## **Screenshots**
