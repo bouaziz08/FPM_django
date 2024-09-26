@@ -21,7 +21,7 @@ This is a simple and efficient To-Do List app built using Django as the backend 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/bouaziz08/FPM_django.git
     ```
 2. Navigate to the project directory:
     ```bash
