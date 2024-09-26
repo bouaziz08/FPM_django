@@ -50,12 +50,26 @@ This is a simple and efficient To-Do List app built using Django as the backend 
 
 ## **Screenshots**
 
-**Task View**  
-![Task View](./assets/task-view.png)
+**Login Interface**  
+![Login](./images/Login.png)
+
+**Register Interface**  
+![Register](./images/Register.png)
+
+**Dashboard**  
+![Task View](./images/Dachboard.png)
 
 **Add Task Interface**  
-![Add Task](./assets/add-task.png)
+![Add Task](./images/creation.png)
 
+**Modify Task Interface**  
+![Modify Task](./images/Modify.png)
+
+**Filter Interface**  
+![Filter](./images/Search.png)
+
+**Email Interface**  
+![Email](./images/Email.png)
 ---
 
 ## **License**
@@ -65,4 +79,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## **Contact**
 
-For questions or feedback, reach out via GitHub or email at [your.email@example.com](mailto:your.email@example.com).
+For questions or feedback, reach out via GitHub or email at [bouaziz.design08@gmail.com](mailto:your.email@example.com).
